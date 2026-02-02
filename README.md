@@ -1,37 +1,23 @@
-# Laboration 1 – Automatisering & Publicering
+# Laboration 2 – ECMAScript
 
 ## Projektbeskrivning
-Webbplatsen består av tre undersidor:
+Denna webbplats visar ramschemat för Webbutvecklingsprogrammet och använder JSON-data från MIUN:s server.  
 
-1. **Startsida** – innehåller huvudmeny, rubrik, introduktion och lista över webbplatsens syfte.  
-2. **Bildersida** – visar fem bilder i ett responsivt galleri.  
-3. **Arbetsprocess** – beskriver steg-för-steg hur webbplatsen byggts och vilka verktyg som används.  
+Funktioner:
 
+1. Hämtar kursdata med **Fetch API** och `async/await`.  
+2. Dynamiskt renderar en tabell med kurskod, kursnamn och progression.  
+3. Möjlighet att **sortera tabellen** genom att klicka på rubrikerna.  
+4. Möjlighet att **filtrera/söka** på kurskod och kursnamn direkt i tabellen.
 
 ## Branch-arbetssätt
 Utveckling sker i `development`-branchen.  
-När webbplatsen är färdig mergas ändringarna till `main`, som används för publicering via GitHub Pages.
+När labben är färdig mergas ändringarna till `main`, som används för publicering via GitHub Pages.
 
-Webbplatsen använder HTML, CSS och JavaScript och är responsiv.
 
 ## Automatisering
-Projektet använder **NodeJS** och **Vite** för att automatisera följande saker:
-
-- Minifiering av CSS-filer  
-- Minifiering av JavaScript-filer  
-- Optimering av bilder till moderna format (WebP/AVIF)  
-- Kopiering av arbetsfiler från src/ till publiceringsmappen docs/
-
-För att bygga webbplatsen från arbetsfiler:
-
-1. Körde jag npm install för att installera alla beroenden  
-2. Körde jag npm run build för att skapa produktion i docs/
-
-## Filstruktur
-- src/ – arbetsfiler (HTML, CSS, JS, bilder)  
-- docs/ – publiceringsfiler som GitHub Pages använder  
-- Innehåller alla HTML-sidor, minifierad CSS och JS (assets/) samt optimerade bilder (bilder-optimized/)  
+Projektet använder samma automatiserade arbetsprocess som i Labb 1:
 
 ## Publicerad webbplats
 Webbplatsen publiceras automatiskt via **GitHub Pages**.  
-[Se den publicerade webbplatsen](https://aliatwood.github.io/Automatisering-publicering)
+[Länk till den publicerade webbplatsen](DIN_GITHUB_PAGES_LÄNK_HÄR)
