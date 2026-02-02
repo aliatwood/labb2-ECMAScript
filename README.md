@@ -20,4 +20,4 @@ Projektet använder samma automatiserade arbetsprocess som i Labb 1:
 
 ## Publicerad webbplats
 Webbplatsen publiceras automatiskt via **GitHub Pages**.  
-[Länk till den publicerade webbplatsen](DIN_GITHUB_PAGES_LÄNK_HÄR)
+[Länk till den publicerade webbplatsen](https://aliatwood.github.io/labb2-ECMAScript/)
