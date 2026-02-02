@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startsida</title>
+    <title>Ramschema</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="meny">
-        <button id="meny-växling">☰</button>
-        <a href="index.html">Startsida</a>
-        <a href="bilder.html">Bilder</a>
-        <a href="process.html">Arbetsprocess</a>
-    </nav>
     <main>
-        <div class="intro">
-            <h1 class="titel">Automatisering & publicering</h1>
-            <p>Detta är en demowebbplats vars syfte är att visa automatisering och publicering.</p>
-            <p>Webbplatsen visar:</p>
-            <ul class="lista">
-                <li>Automatiserad byggprocess</li>
-                <li>Optimerade CSS- och JavaScript-filer</li>
-                <li>Bildoptimering med moderna bildformat</li>
-                <li>Automatisk publicering via GitHubb</li>
-            </ul>
-        </div>
+        <div class="container">
+            <h2>Webbutveckling - Ramschema</h2>
+            <label for="search">Sök:</label>
+            <input type="text" id="search" placeholder="Sök efter kurskod eller kursnamn">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Kurskod</th>
+                        <th>Namn</th>
+                        <th>Progression</th>
+                    </tr>                    
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+            </table>
     </main>
 
     <footer>
