@@ -58,3 +58,29 @@ function filterTable(searchTerm) {
         }
     })
 }
+
+document.getElementById("sort-code").addEventListener("click", () => {
+    sortTable(0);
+})
+document.getElementById("sort-name").addEventListener("click", () => {
+    sortTable(1);
+})
+document.getElementById("sort-progression").addEventListener("click", () => {
+    sortTable(2);
+})
+
+function sortTable(column) {
+    const tableBody = document.getElementById("table-body");
+    const rows = Array.from(tableBody.querySelectorAll("tr"));
+
+    rows.sort((a, b) => {
+        const aText = a.cells[column].textContent.toLowerCase();
+        const bText = b.cells[column].textContent.toLowerCase();
+        return aText.localeCompare(bText);
+    });
+
+    tableBody.innerHTML = "";
+    rows.forEach(row => tableBody.appendChild(row));
+
+}
+
