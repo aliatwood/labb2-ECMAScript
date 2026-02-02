@@ -37,3 +37,24 @@ async function getData(){
 
 }
 getData();
+
+const searchInput = document.getElementById("search");
+searchInput.addEventListener("input", () => {
+    filterTable(searchInput.value);
+});
+
+function filterTable(searchTerm) {
+    const tableBody = document.getElementById("table-body");
+    const rows = tableBody.querySelectorAll("tr");
+    rows.forEach(row => {
+        const code = row.cells[0].textContent.toLowerCase();
+        const name = row.cells[1].textContent.toLowerCase();
+        const term = searchTerm.toLowerCase();
+
+        if(code.includes(term) || name.includes(term)) {
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
+        }
+    })
+}
